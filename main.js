@@ -57,9 +57,9 @@ window.addEventListener("load", () => {
 						scroll.value = curtains.getScrollValues().y;
 
 						// clamp delta
-						scroll.delta = Math.max(-30, Math.min(30, scroll.lastValue - scroll.value));
+						scroll.delta = Math.max(-48, Math.min(48, scroll.lastValue - scroll.value));
 
-						scroll.effect = curtains.lerp(scroll.effect, scroll.delta, 0.05);
+						scroll.effect = curtains.lerp(scroll.effect, scroll.delta, 0.06);
 						scrollPass.uniforms.scrollEffect.value = scroll.effect;
 					});
 
